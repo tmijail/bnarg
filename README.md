@@ -15,7 +15,7 @@ El paquete puede importarse desde un script de python
 {'fecha': '18/2/2020', 'compra': '58,2500', 'venta': '63,2500', 'tipo': 'billetes', 'moneda': 'Dolar U.S.A'}
 ```
 
-O como un programa de consola
+O usarse como un programa de consola
 
 ```bash
 $ bnarg -m "Dolar U.S.A" --billetes
@@ -23,6 +23,26 @@ $ bnarg -m "Dolar U.S.A" --billetes
 ```
 
 Para obtener ayuda acerca de las opciones disponibles se puede ejecutar `bnarg --help`.
+
+```bash
+Usage: bnarg [OPTIONS]
+
+  Busca la cotización actual de la moneda seleccionada según el Banco
+  Nación.
+
+  Las devuelve en el siguiente formato
+
+      [Fecha] [Valor de compra] [Valor de venta]
+
+  Por ejemplo,
+
+      18/2/2020 58,2500 63,2500
+
+Options:
+  -m, --moneda TEXT               Moneda a consultar. Por defecto: Dolar U.S.A
+  -b, --billetes / -d, --divisas  Tipo de cotización. Por defecto: -b
+  --help                          Show this message and exit.
+```
 
 Instalación
 -----
