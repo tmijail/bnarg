@@ -50,5 +50,5 @@ Para instalarlo hay que clonar el repositorio y ejecutar `setup.py`
 ```bash
 $ git clone https://github.com/tmijail/bnarg.git
 $ cd bnarg
-$ python setup.py install
+$ python setup.py install --user
 ```
