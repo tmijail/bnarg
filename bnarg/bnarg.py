@@ -12,9 +12,12 @@ import bs4
 import click
 
 
-@click.command()
-@click.option('--moneda', '-m', default='Dolar U.S.A', help='Moneda a consultar. Por defecto: Dolar U.S.A')
-@click.option('--billetes/--divisas', '-b/-d', default=True, help='Tipo de cotización. Por defecto: -b')
+CONTEXT_SETTINGS = dict(help_option_names=['-h', '--help'])
+
+
+@click.command(context_settings=CONTEXT_SETTINGS)
+@click.option('--moneda', '-m', default='Dolar U.S.A', help='Moneda a consultar. [default: Dolar U.S.A]')
+@click.option('--billetes/--divisas', '-b/-d', default=True, help='Tipo de cotización. [default: --billetes]')
 def main(moneda, billetes):
     """
     Busca la cotización actual de la moneda seleccionada según el Banco Nación.\n
