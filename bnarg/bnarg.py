@@ -27,10 +27,7 @@ def main(moneda, billetes):
         18/2/2020 58,2500 63,2500
     """
     try:
-        if billetes:
-            cotiz = cotizacion(moneda, 'billetes')
-        else:
-            cotiz = cotizacion(moneda, 'divisas')
+        cotiz = cotizacion(moneda, 'billetes' if billetes else 'divisas')
     except:
         print("\033[1;31mERROR:\033[0m", "No se ha podido obtener la cotización.")
         return -1
