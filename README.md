@@ -25,6 +25,7 @@ $ bnarg -m "Dolar U.S.A" --billetes
 Para obtener ayuda acerca de las opciones disponibles se puede ejecutar `bnarg --help`.
 
 ```bash
+$ bnarg --help
 Usage: bnarg [OPTIONS]
 
   Busca la cotización actual de la moneda seleccionada según el Banco
