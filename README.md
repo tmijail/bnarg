@@ -1,7 +1,7 @@
 bnarg
 ========================
 
-Paquete no oficial que permite obtener las cotizaciones actuales que se ven en la
+Paquete de Python no oficial que permite obtener las cotizaciones actuales que se ven en la
 [página principal del BNA](https://www.bna.com.ar/Personas).
 
 Uso
