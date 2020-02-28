@@ -1,7 +1,7 @@
 bnarg
 ========================
 
-Paquete no oficial que permite obtener las cotizaciones actuales que se ven en la
+Paquete de Python no oficial que permite obtener las cotizaciones actuales que se ven en la
 [página principal del BNA](https://www.bna.com.ar/Personas).
 
 Uso
@@ -25,6 +25,7 @@ $ bnarg -m "Dolar U.S.A" --billetes
 Para obtener ayuda acerca de las opciones disponibles se puede ejecutar `bnarg --help`.
 
 ```bash
+$ bnarg --help
 Usage: bnarg [OPTIONS]
 
   Busca la cotización actual de la moneda seleccionada según el Banco
