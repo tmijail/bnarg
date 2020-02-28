@@ -30,10 +30,10 @@ def main(moneda, billetes):
         cotiz = cotizacion(moneda, 'billetes' if billetes else 'divisas')
     except:
         print("\033[1;31mERROR:\033[0m", "No se ha podido obtener la cotización.")
-        return -1
+        exit(1)
 
     print(cotiz['fecha'], cotiz['compra'], cotiz['venta'])
-    return 0
+    exit(0)
 
 
 def cotizacion(moneda='Dolar U.S.A', tipo='billetes'):
